@@ -17,24 +17,15 @@ public class Test {
         return max;
     }
 
-    static int recursion(int n) {
-        int x = n;
+    private static int recursion(int n) {
         if (n == 1) {
             System.out.println("End of list");
             return 1;
         }
         int res = recursion(n - 1);
         System.out.println(res);
-        System.out.println(x);
+        System.out.println(n);
         return 123;
-    }
-
-    static void printMatrix1(int[][] matrix) {
-        printMatrix(matrix);
-    }
-
-    public static void printMatrix(int[][] matrix) {
-
     }
 
     public static void main(String[] args) {
